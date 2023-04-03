@@ -1,18 +1,19 @@
 import java.util.Scanner;
- class string_man{
-    public static void main(String[] args) {
+class string_man
+{
+    public static void main(String[] args) 
+{
         System.out.println("Enter The String");
         Scanner sc = new Scanner(System.in);
-        StringBuffer sb=new StringBuffer("Hello ");  
-        sb.append("Java");
+        StringBuffer str=new StringBuffer("Welcome ");
+        int len = str.length();
+        str.append("program");
         String str1 = sc.nextLine();
-        System.out.println("Length of String = "+str1.length());
+        System.out.println("Length of String = "+str.length());
         System.out.println("Character at First position  = "+str1.charAt(1));
-        System.out.println("String Contains 'Col' sequence :"+str1.contains("Col"));
-        System.out.println("String ends with e : "+str1.endsWith("e"));
-        System.out.println("Replace'col' with 'kol' : "+str1.replaceAll("Col","kol"));
         System.out.println("LOWERCASE : "+str1.toLowerCase());
         System.out.println("UPPERCASE : "+str1.toUpperCase());
-        System.out.println(sb);  
-}
+        System.out.println("append:"+str);
+        System.out.println("reverse:"+str.reverse());  
+      }
 }
