@@ -1,27 +1,24 @@
-class Rectangle
+class rectangle
 {
-double length;
-int breadth;
-void setData()
- {
-   System.out.println("variables are...");
-   length=12.48;
-   System.out.println("Length is: "+length);
-   breadth=13;
-   System.out.println("Breadth is: "+breadth);
-  }
-  
-void getArea()
+double len;
+double bre;
+void setdata(double l,double b)
 {
-   double area;
-   area=length*breadth;
-   System.out.println("Area of rectangle: "+area);
+len=l;
+System.out.println("length is:"+len);
+bre=b;
+System.out.println("breadth is:"+bre);
 }
-
+void getarea()
+{
+double area;
+area=len*bre;
+System.out.println("area is:"+area);
+}
 public static void main(String args[])
 {
-Rectangle r1=new Rectangle();
-r1.setData();
-r1.getArea();
+Rectangle obj=new Rectangle();
+obj.setdata(12.48,13.0);
+obj.getarea();
 }
 }
