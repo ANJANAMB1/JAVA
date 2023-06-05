@@ -1,22 +1,21 @@
 import java.util.Scanner;
- class employee 
- {
+ class Employee {
     int Empid;
     String Name;
     double Salary;
     String Address;
-    employee(int no, String na, double sal, String add) {
+    Employee(int no, String na, double sal, String add) {
         this.Empid = no;
         this.Name = na;
         this.Salary = sal;
         this.Address = add;
     }
 }
-public class teacher extends employee{
+public class Teacher extends Employee{
  String dept;
  String subject;
  
- teacher(int no, String na, double sal, String add, String dep, String sub){
+ Teacher(int no, String na, double sal, String add, String dep, String sub){
      super(no,na,sal,add);
      this.dept= dep;
      this.subject=sub;
@@ -54,7 +53,7 @@ public class teacher extends employee{
     
 
     }
-    System.out.println("\nInformations of all the employees");
+    System.out.println("\n********Informations of all the employee's************");
     for(int i=0;i<num;i++){
         int j=i+1;
         System.out.println("\n"+j+").");
