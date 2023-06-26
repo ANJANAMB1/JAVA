@@ -1,7 +1,4 @@
-import java.util.Scanner;
-
-// Create classes Student and Sports. Create another class Result inherited from Student and 
-// Sports. Display the academic and sports score of a student
+import java.util.Scanner; 
 class sports{
     String sport;
     int Rating;
@@ -27,7 +24,7 @@ public class result extends student {
     void display(){
         System.out.println("\nSports Details of Student");
         System.out.println("Sport :"+sport);
-        System.out.println("Rating :"+Rating);
+        System.out.println("sports score :"+Rating);
         System.out.println("\nAcademic Details of Student");
         System.out.println("Academic Grade :"+Grade);
         System.out.println("Overall percentage :"+Overall_per);
@@ -38,9 +35,9 @@ public class result extends student {
         System.out.println("\nEnter the Sports Details of Student");
         System.out.println("\n Sport: ");
         String a =sc.next();
-        System.out.println("\n Sport Rating  out of 10: ");
+        System.out.println("\n Sports score: ");
         int b =sc.nextInt();
-        System.out.println("\nEnter the Sports Details of Student");
+        System.out.println("\nEnter the Academic Details of Student");
         System.out.println("\n Academic Grade: ");
         String c =sc.next();
         System.out.println("\n Overall percentage: ");
